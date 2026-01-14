@@ -22,6 +22,7 @@ Neutral vs Irrelevant
 
 
 Two-Stage Classification Approach:-
+```text
 Input sentence
       ↓
 Is this subjective?
@@ -30,7 +31,7 @@ Is this subjective?
     ↓          ↓
 Positive /   Neutral /
 Negative     Irrelevant
-
+```
 🔹 What does “Subjective” mean?
 Subjective text expresses an opinion or emotion.
 Examples:
