@@ -1,9 +1,10 @@
 Given a user-written text (tweet or sentence), the model predicts one of four sentiment classes -:
- ```text✅ Positive – expresses a positive opinion
+ ```text
+ ✅ Positive – expresses a positive opinion
  ❌ Negative – expresses a negative opinion
  ⚪ Neutral – factual or emotionless statement
  🚫 Irrelevant – unrelated to sentiment or entity
-```text
+```
 
 | Input Text                         | Predicted Sentiment |
 | ---------------------------------- | ------------------- |
@@ -12,11 +13,13 @@ Given a user-written text (tweet or sentence), the model predicts one of four se
 | *"I added this movie to my PC"*    | **Neutral**         |
 | *"I am going to the market today"* | **Irrelevant**      |
 
-```textDuring experimentation, multiple machine learning models were evaluated, including Logistic Regression, Naive Bayes, and Support Vector Machines (SVM) with different text vectorization techniques.
-After comparison, Linear SVM with CountVectorizer was selected because it delivered the best accuracy and stability on high-dimensional text data.
 ```text
+During experimentation, multiple machine learning models were evaluated, including Logistic Regression, Naive Bayes, and Support Vector Machines (SVM) with different text vectorization techniques.
+After comparison, Linear SVM with CountVectorizer was selected because it delivered the best accuracy and stability on high-dimensional text data.
+```
 
-```textWhy a Single Classifier Was Not Enough -:
+```text
+Why a Single Classifier Was Not Enough -:
 A single 4-class classifier struggled to correctly distinguish between:
 Positive vs Neutral
 Negative vs Neutral
@@ -34,7 +37,8 @@ Is this subjective?
 Positive /   Neutral /
 Negative     Irrelevant
 ```
-```text🔹 What does “Subjective” mean?
+```text
+🔹 What does “Subjective” mean?
 Subjective text expresses an opinion or emotion.
 Examples:
 “I love this movie” → Subjective
